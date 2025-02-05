@@ -64,12 +64,17 @@
                        inset -5px -5px 10px rgba(255, 255, 255, 0.1);
             font-size: 15px;
         }
+
+        shreddit-post-share-button{
+            display: none !important
+        }
     `;
 
     // List of shadow hosts to target
     const shadowHostSelectors = [
         'left-nav-top-section',    // Navigation section
-        'reddit-search-large'      // Search bar container
+        'reddit-search-large',      // Search bar container
+        'shreddit-post'
     ];
 
     function injectStylesIntoShadowRoots() {
